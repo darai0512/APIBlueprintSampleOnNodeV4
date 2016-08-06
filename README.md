@@ -44,7 +44,7 @@ UTF-8
     + Attributes(Base)
         + status (Status)
             + code: 404 (number)
-            + message: `groupId is invalid.` (string) - 文字列エスケープはバッククォートで囲む
+            + message: `Combination of clientId and id is invalid.` (string) - 文字列エスケープはバッククォートで囲む
 
 ## 顧客系 [/v1/client]
 ### クライアント登録 [POST]
