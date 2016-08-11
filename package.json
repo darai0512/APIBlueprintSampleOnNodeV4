@@ -2,9 +2,9 @@
   "name": "APIBlueprintSampleOnNodeV4",
   "version": "0.0.0",
   "scripts": {
-    "build": "./node_modules/.bin/aglio -i README.md -o index.html",
-    "render": "./node_modules/.bin/aglio -i README.md -s",
-    "mock": "./node_modules/.bin/api-mock -p 3000 README.md"
+    "build": "aglio -i README.md -o index.html",
+    "render": "aglio -i README.md -s",
+    "mock": "api-mock -p 3000 README.md"
   },
   "devDependencies": {
     "aglio": "^2.2.1",
