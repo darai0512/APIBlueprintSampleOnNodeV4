@@ -1,13 +1,16 @@
 {
   "name": "APIBlueprintSampleOnNodeV4",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "build": "aglio -i README.md -o index.html # edit document with display in localhost",
+    "build": "aglio -i README.md -o index.html # localhostでdocument表示しながら編集",
     "render": "aglio -i README.md -s # output document",
-    "mock": "api-mock -p 3000 README.md # make mock server in port 3000"
+    "mock": "api-mock -p 3000 README.md # mock (-p=port)",
+    "api-mock": "drakov -f doc/api/*.md --public -s doc/public/",
+    "api-mock-watch": "npm run api-mock -- --watch # 2度目以降の変更がwatchされない"
   },
-  "devDependencies": {
+  "dependencies": {
     "aglio": "^2.2.1",
-    "api-mock": "^0.3.2"
+    "api-mock": "^0.3.2",
+    "drakov": "^1.0.4"
   }
 }
